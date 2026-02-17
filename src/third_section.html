@@ -415,7 +415,7 @@
                     <div class="carousel-container" id="carousel1">
                         <div class="carousel-track">
                             <div class="carousel-slide" onclick="openModal(0, 0)">
-                                <img src="../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png"
+                                <img src="../assets/images/section3/3.1/780DDA99-4CDA-46F2-B2FD-508D74E160EE_1_105_c.jpeg"
                                     alt="ยืนเวรประจำวัน">
                                 <div class="slide-overlay">
                                     <p class="slide-title">ยืนเวรประจำวัน</p>
@@ -423,6 +423,10 @@
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-btn prev"
+                            onclick="event.stopPropagation(); moveSlide('carousel1', -1)">❮</button>
+                        <button class="carousel-btn next"
+                            onclick="event.stopPropagation(); moveSlide('carousel1', 1)">❯</button>
                     </div>
                     <div class="carousel-dots" id="carousel1-dots"></div>
                 </section>
@@ -465,6 +469,37 @@
                     <div class="carousel-dots" id="carousel2-dots"></div>
                 </section>
 
+                <!-- 3.3 การพัฒนาตนเองด้านวิชาชีพครู -->
+                <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-sidebar mb-6">3.3 การพัฒนาตนเองด้านวิชาชีพครู</h2>
+
+                    <div class="carousel-container" id="carousel3">
+                        <div class="carousel-track">
+                            <div class="carousel-slide" onclick="openModal(2, 0)">
+                                <img src="../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png"
+                                    alt="อบรมพัฒนาตนเอง">
+                                <div class="slide-overlay">
+                                    <p class="slide-title">การอบรมและพัฒนาตนเอง</p>
+                                    <p class="slide-hint">คลิกเพื่อดูรายละเอียด</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide" onclick="openModal(2, 1)">
+                                <img src="../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png"
+                                    alt="แลกเปลี่ยนเรียนรู้">
+                                <div class="slide-overlay">
+                                    <p class="slide-title">แลกเปลี่ยนเรียนรู้กับครูพี่เลี้ยง</p>
+                                    <p class="slide-hint">คลิกเพื่อดูรายละเอียด</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev"
+                            onclick="event.stopPropagation(); moveSlide('carousel3', -1)">❮</button>
+                        <button class="carousel-btn next"
+                            onclick="event.stopPropagation(); moveSlide('carousel3', 1)">❯</button>
+                    </div>
+                    <div class="carousel-dots" id="carousel3-dots"></div>
+                </section>
+
             </div>
         </main>
     </div>
@@ -500,9 +535,13 @@
                 {
                     title: "ยืนเวรประจำวัน",
                     images: [
-                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png",
-                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png",
-                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png"
+                        "../assets/images/section3/3.1/780DDA99-4CDA-46F2-B2FD-508D74E160EE_1_105_c.jpeg",
+                        "../assets/images/section3/3.1/5D576B50-9C16-41C2-9AE2-6B0E2DC2F1B9_1_105_c.jpeg",
+                        "../assets/images/section3/3.1/A351D1DA-CC89-43A9-BF08-3A2EA1446322_1_105_c.jpeg",
+                        "../assets/images/section3/3.1/312338E0-EB77-4EDB-B821-D0CE785638E4_1_105_c.jpeg",
+                        "../assets/images/section3/3.1/39854951-4D1F-4A06-BE08-0C547F085255_1_105_c.jpeg",
+                        "../assets/images/section3/3.1/BD8E282E-E693-4AB7-9374-1F13D934C62D_1_105_c.jpeg",
+                        "../assets/images/section3/3.1/8CF4CE46-1DC6-4400-8C11-7688698DF685_1_201_a.jpeg"
                     ],
                     description: `
                         <p><strong>กิจกรรม:</strong> ปฏิบัติหน้าที่ยืนเวรประจำวัน</p>
@@ -570,6 +609,46 @@
                             <li>ร่วมกิจกรรมวันสำคัญของชุมชน</li>
                             <li>ช่วยเหลืองานบุญประเพณี</li>
                             <li>เป็นแบบอย่างที่ดีให้นักเรียน</li>
+                        </ul>
+                    `
+                }
+            ],
+            // Section 3.3 - การพัฒนาตนเองด้านวิชาชีพครู
+            [
+                {
+                    title: "การอบรมและพัฒนาตนเอง",
+                    images: [
+                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png",
+                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png",
+                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png"
+                    ],
+                    description: `
+                        <p><strong>กิจกรรม:</strong> เข้าร่วมการอบรมและสัมมนาทางวิชาการ</p>
+                        <p><strong>วัตถุประสงค์:</strong> พัฒนาความรู้และทักษะในการจัดการเรียนการสอน</p>
+                        <p><strong>รายละเอียด:</strong></p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>เข้าร่วมอบรมเชิงปฏิบัติการด้านการจัดการเรียนรู้</li>
+                            <li>ศึกษาเทคนิคการสอนและนวัตกรรมใหม่ๆ</li>
+                            <li>พัฒนาทักษะการใช้เทคโนโลยีในการสอน</li>
+                            <li>แลกเปลี่ยนประสบการณ์กับครูจากโรงเรียนอื่น</li>
+                        </ul>
+                    `
+                },
+                {
+                    title: "แลกเปลี่ยนเรียนรู้กับครูพี่เลี้ยง",
+                    images: [
+                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png",
+                        "../assets/images/Gemini_Generated_Image_3wbttt3wbttt3wbt.png"
+                    ],
+                    description: `
+                        <p><strong>กิจกรรม:</strong> ปรึกษาและแลกเปลี่ยนเรียนรู้กับครูพี่เลี้ยง</p>
+                        <p><strong>วัตถุประสงค์:</strong> พัฒนาการสอนและการจัดการชั้นเรียน</p>
+                        <p><strong>รายละเอียด:</strong></p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>สังเกตการสอนของครูพี่เลี้ยง</li>
+                            <li>รับคำแนะนำในการจัดการชั้นเรียน</li>
+                            <li>ปรับปรุงแผนการสอนตามคำแนะนำ</li>
+                            <li>นำความรู้ไปประยุกต์ใช้ในการสอน</li>
                         </ul>
                     `
                 }
@@ -747,6 +826,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             initCarousel('carousel1');
             initCarousel('carousel2');
+            initCarousel('carousel3');
         });
     </script>
 </body>
