@@ -117,13 +117,14 @@
                     <div class="flex items-center justify-between mb-6">
                         <h2 class="text-2xl font-bold text-sidebar">1.1 แผนการจัดการเรียนรู้</h2>
                         <button
-                            onclick="downloadPDF('../assets/pdf_files/1.1/แผนการสอน.pdf.pdf', 'แผนการจัดการเรียนรู้.pdf')"
+                            onclick="downloadPDF('../assets/pdf_files/1.1/แผนการสอน.pdf', 'แผนการจัดการเรียนรู้.pdf')"
                             class="px-6 py-2 bg-sidebar text-white rounded-xl hover:bg-sidebar/90 transition-all duration-200 cursor-pointer">
                             ดาวน์โหลด
                         </button>
                     </div>
                     <!-- PDF.js Viewer (All devices) -->
-                    <div class="w-full h-[800px] rounded-xl border border-sidebar/10 overflow-hidden">
+                    <div class="w-full rounded-xl border border-sidebar/10 overflow-hidden"
+                        style="aspect-ratio: 210/297">
                         <iframe src="/assets/pdf_files/1.1/แผนการสอน.pdf" class="w-full h-full"
                             title="แผนการจัดการเรียนรู้"></iframe>
                     </div>
@@ -162,7 +163,8 @@
                                 </span>
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
-                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div
+                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-h-[200px] overflow-y-auto pr-2 custom-scrollbar">
                                     <a href="https://www.canva.com/design/DAG3m-Z5jGs/VoQREpMwfCHhlBIIUI2RVw/edit?utm_content=DAG3m-Z5jGs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                                         target="_blank"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
@@ -250,7 +252,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 h-[500px] overflow-y-auto pr-2 custom-scrollbar">
+                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-h-[200px] overflow-y-auto pr-2 custom-scrollbar">
                                     <!-- 1. Pacdora -->
                                     <a href="https://www.pacdora.com/?utm_source=googleads&utm_medium=search&campaign=branding&gad_source=1&gad_campaignid=22277641379&gbraid=0AAAAAoXzfogLqsf0XJZbO0PI4ozAE3Ujs&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1CeHiYwcv3UxYmNmo0tLURNrGAd9cXB6GRGSfHe2u78IBhktMlk85hoCdi4QAvD_BwE"
                                         target="_blank"
@@ -469,7 +471,7 @@
                                             d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                     </svg>
                                 </a>
-                                <a href="Phttps://forms.gle/fJ5ujJPaXFBaEtud9" target="_blank"
+                                <a href="https://forms.gle/fJ5ujJPaXFBaEtud9" target="_blank"
                                     class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
                                     <span
                                         class="px-2 py-0.5 rounded-md text-xs font-bold text-white bg-[#4A3F38]">หลัง</span>
@@ -494,7 +496,7 @@
                     </div>
                     <!-- Link Display Area (maintains same height as iframe) -->
                     <div
-                        class="w-full h-[800px] rounded-xl border border-sidebar/10 overflow-hidden bg-gradient-to-br from-sidebar/5 to-sidebar/10 flex items-center justify-center">
+                        class="w-full h-[480px] rounded-xl border border-sidebar/10 overflow-hidden bg-gradient-to-br from-sidebar/5 to-sidebar/10 flex items-center justify-center">
                         <div class="text-center space-y-6 p-8">
                             <div class="mb-8">
                                 <svg class="w-24 h-24 mx-auto text-sidebar/40" fill="none" stroke="currentColor"
@@ -530,7 +532,8 @@
                         </button>
                     </div>
                     <!-- PDF.js Viewer (All devices) -->
-                    <div class="w-full h-[800px] rounded-xl border border-sidebar/10 overflow-hidden">
+                    <div class="w-full rounded-xl border border-sidebar/10 overflow-hidden"
+                        style="aspect-ratio: 210/297">
                         <iframe src="/assets/pdf_files/1.4/โครงร่างวิจัย.pdf" class="w-full h-full"
                             title="วิจัยในชั้นเรียน"></iframe>
                     </div>
@@ -538,17 +541,511 @@
 
                 <!-- 1.5 ผลงานนักเรียน -->
                 <section class="bg-white rounded-2xl shadow-sm p-6 md:p-8">
-                    <div class="flex items-center justify-between mb-6">
-                        <h2 class="text-2xl font-bold text-sidebar">1.5 ผลงานนักเรียน</h2>
-                        <button onclick="downloadPDF('assets/pdf_files/1.5/ผลงานนักเรียน.pdf')"
-                            class="px-6 py-2 bg-sidebar text-white rounded-xl hover:bg-sidebar/90 transition-all duration-200 cursor-pointer">
-                            ดาวน์โหลด
-                        </button>
-                    </div>
-                    <!-- PDF.js Viewer (All devices) -->
-                    <div class="w-full h-[800px] rounded-xl border border-sidebar/10 overflow-hidden">
-                        <iframe src="/assets/pdf_files/1.5/ผลงานนักเรียน.pdf" class="w-full h-full"
-                            title="ผลงานนักเรียน"></iframe>
+                    <h2 class="text-2xl font-bold text-sidebar mb-8">1.5 ผลงานนักเรียน</h2>
+
+                    <div class="space-y-4">
+                        <!-- Work 1: 5 Links -->
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#705C53] text-white shadow-md group-open:scale-110 transition-transform">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-sidebar text-xl">งานที่ 1</h3>
+                                        <p class="text-sm text-sidebar/60">8 ลิงค์</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="transform group-open:rotate-180 transition-transform duration-300 text-sidebar/40">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="p-6 border-t border-sidebar/10 bg-white/50">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Links 1-5 -->
+                                    <a href="https://www.canva.com/design/DAG4dngfXXU/tmtYI3gyVm5sgx-726pV3w/edit?utm_content=DAG4dngfXXU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">1</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            1.1</span></a>
+                                    <a href="https://www.canva.com/design/DAG4d1fzqRg/1YLFOtA8B2zhTShJcmYt0g/edit?utm_content=DAG4d1fzqRg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">2</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            1.2</span></a>
+                                    <a href="https://www.canva.com/design/DAG46EbFIDM/PmOk20djUvru_Tzr6TYGow/edit?utm_content=DAG46EbFIDM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">3</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            1.3</span></a>
+                                    <a href="https://www.canva.com/design/DAG4dmJjl2E/y76Wa6ffeFlRmfts63HOYg/edit?utm_content=DAG4dmJjl2E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">4</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            1.4</span></a>
+
+                                    <a href="https://www.canva.com/design/DAG48jrNlko/lWE1l7vF_WEIqFCxJgPyyg/edit?utm_content=DAG48jrNlko&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">5</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            1.6</span></a>
+                                    <a href="https://www.canva.com/design/DAG495jAnJU/OJu9yngkQ57_hbc_D8GEaQ/edit?utm_content=DAG495jAnJU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">6</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            1.7</span></a>
+                                    <a href="https://www.canva.com/design/DAG4oheTi4w/QXAd97FszIUIm8phD-tPMg/edit?utm_content=DAG4oheTi4w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">7</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            1.8</span></a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Work 2: 12 Links -->
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#705C53] text-white shadow-md group-open:scale-110 transition-transform">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-sidebar text-xl">งานที่ 2</h3>
+                                        <p class="text-sm text-sidebar/60">12 ลิงค์</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="transform group-open:rotate-180 transition-transform duration-300 text-sidebar/40">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="p-6 border-t border-sidebar/10 bg-white/50">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Links 1-12 -->
+                                    <a href="https://www.canva.com/design/DAG5xlcefyI/igDDULQRM4mD5POg3PQMpg/edit?utm_content=DAG5xlcefyI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">1</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.1</span></a>
+                                    <a href="https://www.canva.com/design/DAG5xyhBn98/XN6ZLIYxImevbmjbs_LIpw/edit?utm_content=DAG5xyhBn98&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">2</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.2</span></a>
+                                    <a href="https://www.canva.com/design/DAG5xiJOQiY/vPsdoQFSZzuEVjdTyRIBdg/edit?utm_content=DAG5xiJOQiY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">3</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.3</span></a>
+                                    <a href="https://www.canva.com/design/DAG5x7THDsE/LuW14IvLFhZKWZvPK0WiuQ/edit?utm_content=DAG5x7THDsE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">4</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.4</span></a>
+                                    <a href="https://www.canva.com/design/DAG5xhOUhdY/Bn8wjwF6P5qSi25YA-aF6A/edit?utm_content=DAG5xhOUhdY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">5</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.5</span></a>
+                                    <a href="https://www.canva.com/design/DAG6b6kRVG8/OpHAgMD72H3ab5MJ6ZjKPA/edit?utm_content=DAG6b6kRVG8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">6</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.6</span></a>
+                                    <a href="https://www.canva.com/design/DAG5xh5WzQw/Ir0Us7W8vpjEccn348v4aw/edit?utm_content=DAG5xh5WzQw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">7</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.7</span></a>
+                                    <a href="https://www.canva.com/design/DAG5x1xCT8s/l_vHNrdSUmsDe0uwLSvfFQ/edit?utm_content=DAG5x1xCT8s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">8</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.8</span></a>
+                                    <a href="https://www.canva.com/design/DAG5xtIoV_o/2UYWo8ENCwC8u7K6h6_o3g/edit?utm_content=DAG5xtIoV_o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">9</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.9</span></a>
+                                    <a href="https://www.canva.com/design/DAG5x8I89n0/QQfVbTW102zjdMf29GhjoA/edit?utm_content=DAG5x8I89n0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">10</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.10</span></a>
+                                    <a href="https://www.canva.com/design/DAG5xpck6zU/9DqQW5LuTXL462G5DURwzQ/edit?utm_content=DAG5xpck6zU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">11</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.11</span></a>
+                                    <a href="https://www.canva.com/design/DAG6bp3vvUM/Z-p7R9CtwHbNuGtLo6w4xg/edit?utm_content=DAG6bp3vvUM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">12</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            2.12</span></a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Work 3: 12 Links -->
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#705C53] text-white shadow-md group-open:scale-110 transition-transform">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-sidebar text-xl">งานที่ 3</h3>
+                                        <p class="text-sm text-sidebar/60">12 ลิงค์</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="transform group-open:rotate-180 transition-transform duration-300 text-sidebar/40">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="p-6 border-t border-sidebar/10 bg-white/50">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Links 1-12 -->
+                                    <a href="https://www.pacdora.com/share?filter_url=psipavbuu1&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">1</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.1</span></a>
+                                    <a href="#https://www.pacdora.com/share?filter_url=psrfyg5kn8&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">2</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.2</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=ps5sp51rfa&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">3</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.3</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=ps3abhjeaj&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">4</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.4</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=ps3esacpo6&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">5</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.5</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=ps4c608tg7&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">6</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.6</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=psjnnvpbt3&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">7</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.7</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=psf1kifyw8&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">8</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.8</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=psfdc7t33b&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">9</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.9</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=psiajb15l5&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">10</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.10</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=pscqt0ds0h&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">11</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.11</span></a>
+                                    <a href="https://www.pacdora.com/share?filter_url=psxmv4f42o&authuser=0"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">12</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            3.12</span></a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Work 4: 6 Links -->
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#705C53] text-white shadow-md group-open:scale-110 transition-transform">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-sidebar text-xl">งานที่ 4</h3>
+                                        <p class="text-sm text-sidebar/60">6 ลิงค์</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="transform group-open:rotate-180 transition-transform duration-300 text-sidebar/40">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="p-6 border-t border-sidebar/10 bg-white/50">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Links 1-6 -->
+                                    <a href="https://www.canva.com/design/DAG9E2DFS8Q/TIV99Ch0gk557VpVxuI2hw/edit?utm_content=DAG9E2DFS8Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">1</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            4.1</span></a>
+                                    <a href="https://www.canva.com/design/DAG95g8qF0w/rwVmWsKhnahyQj1IN1qLGg/edit?utm_content=DAG95g8qF0w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">2</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            4.2</span></a>
+                                    <a href="https://www.canva.com/design/DAG8PlOc6cY/gg2pbJ1rBznv_yrLgel1pw/edit?utm_content=DAG8PlOc6cY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">3</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            4.3</span></a>
+                                    <a href="#https://www.canva.com/design/DAG4dh9N9SM/7DqqaUfC_9rXDgHZR6FWJg/edit?utm_content=DAG4dh9N9SM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">4</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            4.4</span></a>
+                                    <a href="https://www.canva.com/design/DAG7vpkETzU/KQurvB7ee8uFM_jDEryWMg/edit?utm_content=DAG7vpkETzU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">5</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            4.5</span></a>
+                                    <a href="https://www.canva.com/design/DAG7vpUtpXQ/i0j1v0Vm16lLMD2YUKqLqg/edit?utm_content=DAG7vpUtpXQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">6</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            4.6</span></a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Work 5: 6 Links -->
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#705C53] text-white shadow-md group-open:scale-110 transition-transform">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-sidebar text-xl">งานที่ 5</h3>
+                                        <p class="text-sm text-sidebar/60">6 ลิงค์</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="transform group-open:rotate-180 transition-transform duration-300 text-sidebar/40">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="p-6 border-t border-sidebar/10 bg-white/50">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Links 1-6 -->
+                                    <a href="https://www.canva.com/design/DAG70StgcMs/S51TZyvwfaymXAPUEI9mLA/edit?utm_content=DAG70StgcMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">1</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            5.1</span></a>
+                                    <a href="https://www.canva.com/design/DAG82wrOJK8/1yL722CDT3JtGrp_kdfFcA/edit?utm_content=DAG82wrOJK8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">2</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            5.2</span></a>
+                                    <a href="https://www.canva.com/design/DAG7pO6vvXo/GaYJe5CqkeTLDKFckMdMeA/edit?utm_content=DAG7pO6vvXo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">3</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            5.3</span></a>
+                                    <a href="https://www.canva.com/design/DAG7v6X47_Y/Vzi1lo4xFzGRw9FE0U-46A/edit?utm_content=DAG7v6X47_Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">4</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            5.4</span></a>
+                                    <a href="https://www.canva.com/design/DAG8Ja4uPv0/XNpfoxWUCWkJo6ISFuhemQ/edit?utm_content=DAG8Ja4uPv0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">5</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            5.5</span></a>
+                                    <a href="https://www.canva.com/design/DAG7vsvpo9k/pHoDq_oFTJzGBFizti34bg/edit?utm_content=DAG7vsvpo9k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">6</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            5.6</span></a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Work 6: 5 PDF Files -->
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#705C53] text-white shadow-md group-open:scale-110 transition-transform">
+                                        <!-- PDF Icon -->
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-sidebar text-xl">งานที่ 6</h3>
+                                        <p class="text-sm text-sidebar/60">5 ไฟล์ PDF</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="transform group-open:rotate-180 transition-transform duration-300 text-sidebar/40">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="p-6 border-t border-sidebar/10 bg-white/50">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- PDFs 1-5 -->
+                                    <a href="assets/pdf_files/งานที่6/โครงงานผีตาโขน.pdf"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-red-50 text-red-500 text-xs font-bold flex items-center justify-center group-hover:bg-red-500 group-hover:text-white transition-all">PDF</span>
+                                        <span class="text-sidebar/80 text-sm font-medium flex-1">ไฟล์งานที่ 6.1</span>
+                                    </a>
+                                    <a href="assets/pdf_files/งานที่6/วัฒนธรรมสุโขทัย.pdf"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-red-50 text-red-500 text-xs font-bold flex items-center justify-center group-hover:bg-red-500 group-hover:text-white transition-all">PDF</span>
+                                        <span class="text-sidebar/80 text-sm font-medium flex-1">ไฟล์งานที่ 6.2</span>
+                                    </a>
+                                    <a href="assets/pdf_files/งานที่6/พระพุทธชินราช.pdf"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-red-50 text-red-500 text-xs font-bold flex items-center justify-center group-hover:bg-red-500 group-hover:text-white transition-all">PDF</span>
+                                        <span class="text-sidebar/80 text-sm font-medium flex-1">ไฟล์งานที่ 6.3</span>
+                                    </a>
+                                    <a href="assets/pdf_files/งานที่6/วัฒนธรรมโนรา.pdf"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-red-50 text-red-500 text-xs font-bold flex items-center justify-center group-hover:bg-red-500 group-hover:text-white transition-all">PDF</span>
+                                        <span class="text-sidebar/80 text-sm font-medium flex-1">ไฟล์งานที่ 6.4</span>
+                                    </a>
+                                    <a href="assets/pdf_files/งานที่6/ประเพณียี่เป็ง.pdf"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-red-50 text-red-500 text-xs font-bold flex items-center justify-center group-hover:bg-red-500 group-hover:text-white transition-all">PDF</span>
+                                        <span class="text-sidebar/80 text-sm font-medium flex-1">ไฟล์งานที่ 6.5</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Work 7: 5 Links -->
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                            <summary
+                                class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-[#705C53] text-white shadow-md group-open:scale-110 transition-transform">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-sidebar text-xl">งานที่ 7</h3>
+                                        <p class="text-sm text-sidebar/60">5 ลิงค์</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="transform group-open:rotate-180 transition-transform duration-300 text-sidebar/40">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+                            <div class="p-6 border-t border-sidebar/10 bg-white/50">
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    <!-- Links 1-5 -->
+                                    <a href="https://view.genially.com/6975def55cbbecef19044fe9/interactive-content-"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">1</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            7.1</span></a>
+                                    <a href="https://view.genially.com/697814dbc34d1f3930d861c5/interactive-content-chinnaraj-quest"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">2</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            7.2</span></a>
+                                    <a href="https://view.genially.com/6965c1fabc34471ca3b55100/interactive-content-8-12-22-29-31-2"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">3</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            7.3</span></a>
+                                    <a href="https://view.genially.com/695b68b90205f1624b6ee8e1/interactive-content-genially-3"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">4</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            7.4</span></a>
+                                    <a href="https://view.genially.com/6968551ef1d327d651c8fe84/interactive-content-no-1343841"
+                                        class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
+                                            class="w-8 h-8 rounded-lg bg-sidebar/10 text-sidebar text-xs font-bold flex items-center justify-center group-hover:bg-sidebar group-hover:text-white transition-all">5</span><span
+                                            class="text-sidebar/80 text-sm font-medium flex-1">ลิงค์งานที่
+                                            7.5</span></a>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </section>
 
