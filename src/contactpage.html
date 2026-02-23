@@ -89,8 +89,8 @@
 
 <body class="bg-main-bg min-h-screen">
     <!-- Mobile Navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 md:hidden"
-        style="background: linear-gradient(135deg, #705C53 0%, #4A3F38 100%)">
+    <nav class="fixed top-0 left-0 right-0 z-50 md:hidden glass-nav"
+        style="">
         <div class="flex items-center justify-between px-4 py-3">
             <a href="homepage.html" class="text-white font-bold text-lg">Portfolio</a>
             <button id="hamburgerBtn" onclick="toggleMobileMenu()"
@@ -100,7 +100,7 @@
             </button>
         </div>
         <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden bg-sidebar/95 backdrop-blur-sm">
+        <div id="mobileMenu" class="hidden glass-nav">
             <div class="px-4 py-3 space-y-1">
                 <a href="homepage.html" class="block py-3 px-4 rounded-lg text-white/80 hover:bg-white/10">Home</a>
                 <a href="first_section.html"
@@ -118,8 +118,8 @@
     <div class="flex min-h-screen pt-14 md:pt-0">
         <!-- Sidebar (Desktop Only) -->
         <aside
-            class="fixed left-0 top-0 h-full w-64 text-white p-6 flex-col transition-transform duration-300 z-40 hidden md:flex"
-            style="background: linear-gradient(180deg, #705C53 0%, #5D4B44 40%, #4A3F38 70%, #3D322C 100%)">
+            class="fixed left-0 top-0 h-full w-64 text-white p-6 flex-col transition-transform duration-300 z-40 hidden md:flex glass-nav shadow-2xl"
+            style="background: rgba(112, 92, 83, 0.95); backdrop-filter: blur(20px);">
             <div class="mb-12">
                 <h1 class="text-2xl font-bold tracking-tight">Portfolio</h1>
                 <p class="text-sm text-white/70 mt-1">Purida Kumrak</p>

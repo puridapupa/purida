@@ -20,8 +20,8 @@
 
 <body class="bg-main-bg min-h-screen">
     <!-- Mobile Navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 md:hidden"
-        style="background: linear-gradient(135deg, #705C53 0%, #4A3F38 100%)">
+    <nav class="fixed top-0 left-0 right-0 z-50 md:hidden glass-nav"
+        style="">
         <div class="flex items-center justify-between px-4 py-3">
             <a href="homepage.html" class="text-white font-bold text-lg">Portfolio</a>
             <button id="hamburgerBtn" onclick="toggleMobileMenu()"
@@ -31,7 +31,7 @@
             </button>
         </div>
         <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden bg-sidebar/95 backdrop-blur-sm">
+        <div id="mobileMenu" class="hidden glass-nav">
             <div class="px-4 py-3 space-y-1">
                 <a href="homepage.html" class="block py-3 px-4 rounded-lg text-white/80 hover:bg-white/10">Home</a>
                 <a href="first_section.html"
@@ -49,8 +49,8 @@
     <div class="flex min-h-screen pt-14 md:pt-0">
         <!-- Sidebar (Desktop Only) -->
         <aside
-            class="fixed left-0 top-0 h-full w-64 text-white p-6 flex-col transition-transform duration-300 z-40 hidden md:flex"
-            style="background: linear-gradient(180deg, #705C53 0%, #5D4B44 40%, #4A3F38 70%, #3D322C 100%)">
+            class="fixed left-0 top-0 h-full w-64 text-white p-6 flex-col transition-transform duration-300 z-40 hidden md:flex glass-nav shadow-2xl"
+            style="background: rgba(112, 92, 83, 0.95); backdrop-filter: blur(20px);">
             <!-- Logo / Brand -->
             <div class="mb-12">
                 <h1 class="text-2xl font-bold tracking-tight">Portfolio</h1>
@@ -103,7 +103,7 @@
         <main class="flex-1 md:ml-64 p-6 md:p-12">
             <!-- Page Header -->
             <header class="mb-12">
-                <h1 class="text-2xl md:text-3xl font-bold text-sidebar mb-4">1. ด้านการจัดการเรียนรู้</h1>
+                <h1 class="text-2xl md:text-3xl font-bold text-sidebar mb-4"><span class="text-gradient-earth">1. ด้านการจัดการเรียนรู้</span></h1>
                 <p class="text-lg text-sidebar/70">รวบรวมผลงานด้านการจัดการเรียนรู้ทั้งหมด</p>
             </header>
 
@@ -112,7 +112,7 @@
 
                 <!-- 1.1 แผนการจัดการเรียนรู้ -->
                 <section
-                    class="bg-white rounded-2xl shadow-sm p-6 md:p-8 hover:-translate-y-1 transition-transform duration-300 hover:shadow-md">
+                    class="bg-white rounded-2xl p-6 shadow-md card-hover-lift md:p-8 card-hover-lift">
                     <div class="flex items-center justify-between mb-6">
                         <h2 class="text-2xl font-bold text-sidebar">1.1 แผนการจัดการเรียนรู้</h2>
                         <button
@@ -122,23 +122,22 @@
                         </button>
                     </div>
                     <!-- PDF.js Viewer (All devices) -->
-                    <div class="w-full rounded-xl border border-sidebar/10 overflow-hidden"
-                        style="aspect-ratio: 210/297">
-                        <iframe src="/assets/pdf_files/1.1/แผนการสอน.pdf" class="w-full h-full"
+                    <div class="w-full relative rounded-xl border border-sidebar/10 shadow-sm" style="height: 75vh; min-height: 500px; max-height: 900px; overflow-y: auto; -webkit-overflow-scrolling: touch;">
+                        <iframe src="/assets/pdf_files/1.1/แผนการสอน.pdf" class="w-full" style="min-height: 100%; border: none;" scrolling="auto"
                             title="แผนการจัดการเรียนรู้"></iframe>
                     </div>
                 </section>
 
                 <!-- 1.2 สื่อเทคโนโลยี -->
                 <section
-                    class="bg-white rounded-2xl shadow-sm p-6 md:p-8 hover:-translate-y-1 transition-transform duration-300 hover:shadow-md">
+                    class="bg-white rounded-2xl p-6 shadow-md card-hover-lift md:p-8 card-hover-lift">
                     <h2 class="text-2xl font-bold text-sidebar mb-8">1.2 สื่อเทคโนโลยี</h2>
 
                     <!-- Grid Cards Layout: 2x2 balanced -->
                     <div class="space-y-4">
 
                         <!-- Accordion 1: สไลด์การสอน -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -158,7 +157,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-h-[200px] overflow-y-auto pr-2 custom-scrollbar">
+                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
                                     <a href="https://www.canva.com/design/DAG3m-Z5jGs/VoQREpMwfCHhlBIIUI2RVw/edit?utm_content=DAG3m-Z5jGs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                                         target="_blank"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
@@ -220,7 +219,7 @@
                         </details>
 
                         <!-- Accordion 2: สื่อการสอนเพิ่มเติม -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -240,7 +239,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-h-[200px] overflow-y-auto pr-2 custom-scrollbar">
+                                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
                                     <!-- 1. Pacdora -->
                                     <a href="https://www.pacdora.com/?utm_source=googleads&utm_medium=search&campaign=branding&gad_source=1&gad_campaignid=22277641379&gbraid=0AAAAAoXzfogLqsf0XJZbO0PI4ozAE3Ujs&gclid=CjwKCAiAwNDMBhBfEiwAd7ti1CeHiYwcv3UxYmNmo0tLURNrGAd9cXB6GRGSfHe2u78IBhktMlk85hoCdi4QAvD_BwE"
                                         target="_blank"
@@ -379,7 +378,7 @@
                         </details>
 
                         <!-- Accordion 3: ใบงาน -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -411,7 +410,7 @@
                         </details>
 
                         <!-- Accordion 4: แบบทดสอบ -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -455,7 +454,7 @@
 
                 <!-- 1.3 การวัดผลและประเมินผล -->
                 <section
-                    class="bg-white rounded-2xl shadow-sm p-6 md:p-8 hover:-translate-y-1 transition-transform duration-300 hover:shadow-md">
+                    class="bg-white rounded-2xl p-6 shadow-md card-hover-lift md:p-8 card-hover-lift">
                     <div class="flex items-center justify-between mb-6">
                         <h2 class="text-2xl font-bold text-sidebar">1.3 การวัดผลและประเมินผล</h2>
                     </div>
@@ -480,7 +479,7 @@
 
                 <!-- 1.4 วิจัยในชั้นเรียน -->
                 <section
-                    class="bg-white rounded-2xl shadow-sm p-6 md:p-8 hover:-translate-y-1 transition-transform duration-300 hover:shadow-md">
+                    class="bg-white rounded-2xl p-6 shadow-md card-hover-lift md:p-8 card-hover-lift">
                     <div class="flex items-center justify-between mb-6">
                         <h2 class="text-2xl font-bold text-sidebar">1.4 วิจัยในชั้นเรียน</h2>
                         <button onclick="downloadPDF('assets/pdf_files/1.4/โครงร่างวิจัย.pdf', 'วิจัยในชั้นเรียน.pdf')"
@@ -489,21 +488,20 @@
                         </button>
                     </div>
                     <!-- PDF.js Viewer (All devices) -->
-                    <div class="w-full rounded-xl border border-sidebar/10 overflow-hidden"
-                        style="aspect-ratio: 210/297">
-                        <iframe src="/assets/pdf_files/1.4/โครงร่างวิจัย.pdf" class="w-full h-full"
+                    <div class="w-full relative rounded-xl border border-sidebar/10 shadow-sm" style="height: 75vh; min-height: 500px; max-height: 900px; overflow-y: auto; -webkit-overflow-scrolling: touch;">
+                        <iframe src="/assets/pdf_files/1.4/โครงร่างวิจัย.pdf" class="w-full" style="min-height: 100%; border: none;" scrolling="auto"
                             title="วิจัยในชั้นเรียน"></iframe>
                     </div>
                 </section>
 
                 <!-- 1.5 ผลงานนักเรียน -->
                 <section
-                    class="bg-white rounded-2xl shadow-sm p-6 md:p-8 hover:-translate-y-1 transition-transform duration-300 hover:shadow-md">
+                    class="bg-white rounded-2xl p-6 shadow-md card-hover-lift md:p-8 card-hover-lift">
                     <h2 class="text-2xl font-bold text-sidebar mb-8">1.5 ผลงานนักเรียน</h2>
 
                     <div class="space-y-4">
                         <!-- Work 1: 5 Links -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -523,7 +521,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                                     <!-- Links 1-5 -->
                                     <a href="https://www.canva.com/design/DAG4dngfXXU/tmtYI3gyVm5sgx-726pV3w/edit?utm_content=DAG4dngfXXU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
@@ -566,7 +564,7 @@
                         </details>
 
                         <!-- Work 2: 12 Links -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -586,7 +584,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                                     <!-- Links 1-12 -->
                                     <a href="https://www.canva.com/design/DAG5xlcefyI/igDDULQRM4mD5POg3PQMpg/edit?utm_content=DAG5xlcefyI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
@@ -653,7 +651,7 @@
                         </details>
 
                         <!-- Work 3: 12 Links -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -673,7 +671,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                                     <!-- Links 1-12 -->
                                     <a href="https://www.pacdora.com/share?filter_url=psipavbuu1&authuser=0"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
@@ -740,7 +738,7 @@
                         </details>
 
                         <!-- Work 4: 6 Links -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -760,7 +758,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                                     <!-- Links 1-6 -->
                                     <a href="https://www.canva.com/design/DAG9E2DFS8Q/TIV99Ch0gk557VpVxuI2hw/edit?utm_content=DAG9E2DFS8Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
@@ -797,7 +795,7 @@
                         </details>
 
                         <!-- Work 5: 6 Links -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -817,7 +815,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                                     <!-- Links 1-6 -->
                                     <a href="https://www.canva.com/design/DAG70StgcMs/S51TZyvwfaymXAPUEI9mLA/edit?utm_content=DAG70StgcMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
@@ -854,7 +852,7 @@
                         </details>
 
                         <!-- Work 6: 5 PDF Files -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -875,7 +873,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                                     <!-- PDFs 1-5 -->
                                     <a href="assets/pdf_files/งานที่6/โครงงานผีตาโขน.pdf"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md">
@@ -912,7 +910,7 @@
                         </details>
 
                         <!-- Work 7: 5 Links -->
-                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden">
+                        <details class="group bg-white rounded-2xl shadow-sm border border-sidebar/10 overflow-hidden card-hover-lift">
                             <summary
                                 class="flex items-center justify-between p-6 cursor-pointer list-none bg-gradient-to-r from-white to-sidebar/5 hover:bg-sidebar/5 transition-all">
                                 <div class="flex items-center gap-4">
@@ -932,7 +930,7 @@
                             </summary>
                             <div class="p-6 border-t border-sidebar/10 bg-white/50">
                                 <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[200px] overflow-y-auto pr-1 custom-scrollbar">
+                                    class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                                     <!-- Links 1-5 -->
                                     <a href="https://view.genially.com/6975def55cbbecef19044fe9/interactive-content-"
                                         class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white hover:bg-white border border-sidebar/10 hover:border-sidebar/30 transition-all duration-200 group shadow-sm hover:shadow-md"><span
@@ -997,6 +995,23 @@
                     window.open(url, '_blank');
                 });
         }
+
+        
+        // --- Exclusive Accordions (Auto-close others) ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const allDetails = document.querySelectorAll('details');
+            allDetails.forEach((targetDetail) => {
+                targetDetail.addEventListener('toggle', () => {
+                    if (targetDetail.open) {
+                        allDetails.forEach((detail) => {
+                            if (detail !== targetDetail && detail.open) {
+                                detail.open = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
 
         // --- Animations on Scroll ---
         document.addEventListener('DOMContentLoaded', () => {
