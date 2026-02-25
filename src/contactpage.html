@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="../assets/images/meta.png">
     <title>ติดต่อฉัน - Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="../assets/css/custom_background.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/tailwindcss">
@@ -22,6 +24,7 @@
 
         .animate-blob {
             animation: blob 12s infinite alternate ease-in-out;
+            will-change: transform;
         }
         .animation-delay-2000 {
             animation-delay: 2s;
@@ -44,6 +47,7 @@
             border: 1px solid rgba(255, 255, 255, 0.8);
             box-shadow: 0 8px 32px rgba(112, 92, 83, 0.08);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            will-change: transform, box-shadow;
         }
         .glass-card:hover {
             box-shadow: 0 15px 40px rgba(112, 92, 83, 0.15);
@@ -239,7 +243,7 @@
                     <!-- Left Side - Large Image -->
                     <div class="lg:w-1/2 relative overflow-hidden animate-slide-up">
                         <div class="absolute inset-0 bg-gradient-to-br from-sidebar/80 to-sidebar/40 z-10"></div>
-                        <img src="../assets/images/contact.jpeg" alt="Purida Kumrak"
+                        <img src="../assets/images/contact.jpeg" alt="Purida Kumrak" loading="lazy" decoding="async"
                             class="w-full h-64 lg:h-full object-cover">
 
                         <!-- Overlay Content on Image -->

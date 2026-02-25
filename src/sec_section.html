@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="../assets/images/meta.png">
     <title>ด้านระบบดูแลช่วยเหลือนักเรียน - Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="../assets/css/custom_background.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/tailwindcss">
@@ -20,7 +22,7 @@
             --color-accent-light: #E3A88D;
         }
 
-        .animate-blob { animation: blob 12s infinite alternate ease-in-out; }
+        .animate-blob { animation: blob 12s infinite alternate ease-in-out; will-change: transform; }
         .animation-delay-2000 { animation-delay: 2s; }
         .animation-delay-4000 { animation-delay: 4s; }
         @keyframes blob {
@@ -37,6 +39,7 @@
             border: 1px solid rgba(255, 255, 255, 0.8);
             box-shadow: 0 8px 32px rgba(112, 92, 83, 0.08);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            will-change: transform, box-shadow;
         }
         .glass-card:hover {
             box-shadow: 0 15px 40px rgba(112, 92, 83, 0.15);
@@ -55,6 +58,7 @@
         .carousel-track {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
         }
 
         .carousel-slide {
@@ -323,8 +327,8 @@
             z-index: 5;
         }
 
-        /* Hide duplicate/overlapping buttons on mobile */
-        @media (max-width: 768px) {
+        /* Hide duplicate/overlapping buttons on tablet and mobile */
+        @media (max-width: 1024px) {
             .modal-img-nav {
                 display: none;
             }
@@ -498,8 +502,8 @@
                         <div class="carousel-container" id="carousel1">
                             <div class="carousel-track">
                                 <div class="carousel-slide" onclick="openModal(0, 0)">
-                                    <img src="../assets/images/section2/2.1/morning_1.jpg"
-                                        alt="เช็คชื่อนักเรียนตอนเช้า">
+                                    <img src="../assets/images/section2/2.1/morning_1.jpg" alt="เข้าแถวหน้าเสาธง"
+                                        loading="lazy" decoding="async">
                                     <div class="slide-overlay">
                                         <p class="slide-title">เช็คชื่อนักเรียนตอนเช้า</p>
                                         <p class="slide-hint">คลิกเพื่อดูรายละเอียด</p>
